@@ -1,0 +1,358 @@
+@font-face {
+  font-family: first-font;
+  src: url(../fonts/viata-extrabold-1.otf);
+}
+
+.title-container {
+  position: fixed;
+  width: 100%;
+}
+
+.main-title {
+  text-align: center;
+  padding: 2.5vw;
+
+  font-size: 3vw;
+  line-height: 3vw;
+  margin: 0 auto;
+}
+.title-image1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.title {
+  color: #fd4556;
+  font-family: first-font;
+}
+
+body {
+  color: white;
+}
+th {
+  text-shadow: 6px 0px #fd4556;
+  font-size: 3.5vw;
+}
+.table {
+  /* text-shadow: 2px 2px; */
+  /* background-color: red; */
+  font-family: first-font;
+  color: white;
+
+  font-size: 2.5vw;
+  padding: 0px 28px;
+}
+
+.table-body {
+  font-family: first-font;
+  border-radius: 10px;
+  /* background-color:red; */
+  width: 14vw;
+  background-color: rgba(52, 59, 71, 60);
+  font-weight: 600;
+  text-decoration: none;
+  list-style: none;
+  box-shadow: 2px 2px #fd4556;
+}
+.events {
+  /* position: relative; */
+  /* bottom: 30%; */
+  top: 40vh;
+  /* margin-left: 2%; */
+  padding: 10px;
+  position: fixed;
+}
+.table-body a {
+  display: block;
+  text-decoration: none;
+  color: #fd4556;
+  padding: 0.6vw 0.8vw;
+}
+.table-body a:hover {
+  background-color: #3e4652;
+  color: #fd4556;
+  border-radius: 10px;
+}
+/* #event-dark {
+  background-color: rgba(62, 70, 82, 60);
+} */
+.upperline {
+  height: 0.6vw;
+  width: 13vw;
+  top: 1vw;
+
+  transform: skewX(60deg);
+  position: absolute;
+  /* text-align: center; */
+  /* margin: 0 auto; */
+  left: 24vw;
+  background-color: white;
+}
+.underline {
+  height: 0.6vw;
+  width: 39vw;
+  top: 6vw;
+  transform: skewX(60deg);
+  position: absolute;
+  /* text-align: center; */
+  /* margin: 0 auto; */
+  left: 24vw;
+  background-color: white;
+}
+
+@media (max-width: 600px) {
+  .main-title {
+    font-size: 6vw;
+    line-height: 6vw;
+  }
+  .line {
+    background-color: transparent !important;
+  }
+  .underline {
+    background-color: transparent !important;
+  }
+  .upperline {
+    background-color: transparent !important;
+  }
+  .events {
+    width: 50%;
+    margin: 0 auto;
+    top: 15%;
+    margin-left: 15%;
+  }
+  .table-body a {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+  .table-body {
+    width: 50vw;
+    left: 20%;
+  }
+  .events .table th {
+    font-size: 1.7rem;
+    text-shadow: 2px 2px #fd4556;
+  }
+}
+@font-face {
+  font-family: first-font;
+  src: url(../fonts/viata-extrabold-1.otf);
+}
+
+h2,
+h3 {
+  font-family: first-font;
+  text-shadow: 2px 2px #fd4556;
+}
+
+.fab-container {
+  display: none;
+}
+
+.fab-item1 {
+  position: fixed;
+  bottom: 2%;
+  right: 40%;
+  height: 80px;
+  width: 80px;
+  background-color: transparent;
+  border-radius: 150px;
+  z-index: -2;
+  transition: all 1s ease-in-out;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+}
+.fab-item1-active {
+  position: fixed;
+  color: white;
+  bottom: 1.5%;
+  right: 40vw;
+  height: 20vw;
+  width: 20vw;
+  background-color: rgba(62, 70, 82, 60);
+  border-radius: 150px;
+  z-index: 1;
+  transform: translate(0, -70px);
+  transition: all 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 20px 2px #fd4556;
+}
+.fab-item2 {
+  position: fixed;
+  bottom: 2%;
+  right: 40%;
+  height: 80px;
+  width: 80px;
+  color: transparent;
+  background-color: transparent;
+  border-radius: 150px;
+  z-index: -2;
+  transition: all 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+.fab-item2-active {
+  position: fixed;
+  bottom: 1.5%;
+  color: white;
+  right: 40vw;
+  height: 20vw;
+  width: 20vw;
+  background-color: rgba(62, 70, 82, 60);
+  border-radius: 150px;
+  z-index: 1;
+  transform: translate(100px, 0);
+  transition: all 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 20px 2px #fd4556;
+}
+.fab-item3 {
+  position: fixed;
+  bottom: 2%;
+  right: 40%;
+  color: transparent;
+  height: 20vw;
+  width: 20vw;
+  background-color: transparent;
+  border-radius: 150px;
+  z-index: -2;
+  transition: all 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+.fab-item3-active {
+  position: fixed;
+  bottom: 1.5%;
+  right: 40vw;
+  color: white;
+  height: 20vw;
+  width: 20vw;
+  background-color: rgba(62, 70, 82, 60);
+  border-radius: 150px;
+  z-index: 1;
+  transform: translate(-100px, 0);
+  transition: all 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 20px 2px #fd4556;
+}
+
+.fab-button-active {
+  position: fixed;
+  bottom: 0.5%;
+  right: 40%;
+  height: 80px;
+  width: 80px;
+  border-radius: 150px;
+  z-index: 1;
+  /* animation-name: cssAnimation; */
+  animation-duration: 1s;
+  transform: scale(0.5);
+  transition: all 1s ease-in-out;
+  box-shadow: 0 0 20px 4px white;
+}
+
+.fab-button h3 {
+  display: none;
+  transition: all 1s ease-in-out;
+}
+
+.fab-button-active h2 {
+  display: none;
+  transition: all 1s ease-in-out;
+}
+.fab-button-active h3 {
+  display: block;
+  transition: all 1s ease-in-out;
+}
+
+.fab-circular-ring {
+  width: 300px;
+  height: 150px; /* as the half of the width */
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  border: 80px solid gray;
+  opacity: 0.4;
+  border-bottom: 0;
+  box-sizing: border-box;
+  z-index: -10;
+  /* position: fixed; */
+  transition: 0.2s ease-in-out;
+  margin: 0px auto;
+}
+
+.register-button {
+  height: 15vw;
+  width: 15vw;
+  position: fixed;
+  top: 80%;
+  left: 82%;
+  max-width: 200px;
+  max-height: 60px;
+  /* border-radius: 150px; */
+  z-index: 1;
+  background-color: rgba(52, 59, 71, 60);
+  /* transform: skew(10deg); */
+  /* box-shadow: 0 0 8px 2px white; */
+  display: flex;
+  justify-content: center;
+  font-family: first-font;
+  border-radius: 10px;
+  /* background-color:red; */
+  /* width: 14vw; */
+  background-color: rgba(52, 59, 71, 60);
+  /* font-weight: 600; */
+  /* text-decoration: none; */
+  /* list-style: none; */
+  box-shadow: 2px 2px #fd4556;
+}
+.register-button a{
+  color: white;
+  font-family: first-font;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: auto;
+  text-shadow: 2px 2px #fd4556;
+}
+.register-button:hover{
+  background: #3e4652;
+}
+.register-button-active{
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .fab-button {
+    position: fixed;
+    bottom: 1%;
+    right: 40%;
+    height: 80px;
+    width: 80px;
+    background-color: rgba(62, 70, 82, 60);
+    border-radius: 150px;
+    z-index: 1;
+    transition: all 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 0px 1px white;
+  }
+  .fab-container {
+    display: block;
+  }
+  .register-button{
+    position: fixed;
+    left: 35%;
+    width: 30vw;
+    top: 60%;
+  }
+  .register-button a{
+    font-size: 1.2rem;
+  }
+
+}
